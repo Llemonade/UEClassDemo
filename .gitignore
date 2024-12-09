@@ -1,0 +1,49 @@
+# Ignore project-specific directories
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Saved
+/.vs
+/Build
+
+# Ignore platform-specific directories
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+
+# Ignore log and temp files
+*.log
+*.pdb
+*.tmp
+*.cache
+*.dat
+*.ddc
+
+# Ignore specific file extensions
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+*.obj
+*.so
+*.ipa
+*.dsym
+
+# Ignore config and local settings
+*.ini
+*.prop
+*.user
+*.userprefs
+
+# Ignore MacOS system files
+.DS_Store
+._*
+
+# Ignore by-products of Git itself
+*.lock
+*.patch
+*.orig
+*.rej
