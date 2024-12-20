@@ -8,7 +8,7 @@
 AGameManager::AGameManager()
 {
     PrimaryActorTick.bCanEverTick = true;
-    GameTimeLimit = 15.0f; 
+    GameTimeLimit = 30.0f; 
     ElapsedTime = 0.0f;
     bIsGameRunning = true;
 }

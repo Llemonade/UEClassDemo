@@ -16,6 +16,8 @@ ACube::ACube()
     CubeMesh->SetSimulatePhysics(true);
     bIsImportant = false;
     bScaledOnce = false;
+    Scale = 0.5f;
+    basicScore = 10;
 }
 
 // Called when the game starts or when spawned
@@ -73,7 +75,7 @@ void ACube::HandleHit(bool bIsBullet)
     if (!PlayerController)
         return;
 
-    int32 Points = bIsImportant ? 20 : 10;
+    int32 Points = bIsImportant ? 2*basicScore : basicScore;
 
     
     // ªÒ»° GameManager
@@ -88,7 +90,7 @@ void ACube::HandleHit(bool bIsBullet)
     if (!bScaledOnce)
     {
         
-        SetActorScale3D(GetActorScale3D() * 0.5f);
+        SetActorScale3D(GetActorScale3D() * Scale);
         bScaledOnce = true;
     }
     else

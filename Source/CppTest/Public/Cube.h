@@ -50,6 +50,12 @@ private:
 	// 缩放状态
 	bool bScaledOnce;
 
+	//缩放倍率
+	float Scale;
+
+	//基础分数
+	int32 basicScore;
+
 	// 处理命中
 	void HandleHit(bool bIsBullet);
 	
